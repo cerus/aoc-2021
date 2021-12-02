@@ -1,6 +1,7 @@
 package dev.cerus.aoc2021;
 
 import dev.cerus.aoc2021.puzzle.DayOnePuzzle;
+import dev.cerus.aoc2021.puzzle.DayTwoPuzzle;
 import dev.cerus.aoc2021.puzzle.Puzzle;
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,7 +11,8 @@ import java.util.Map;
 public class Launcher {
 
     private static final Puzzle[] PUZZLES = new Puzzle[] {
-            new DayOnePuzzle()
+            new DayOnePuzzle(),
+            new DayTwoPuzzle()
     };
 
     public static void main(final String[] args) {
