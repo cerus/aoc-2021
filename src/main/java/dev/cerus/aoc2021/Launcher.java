@@ -1,6 +1,7 @@
 package dev.cerus.aoc2021;
 
 import dev.cerus.aoc2021.puzzle.DayOnePuzzle;
+import dev.cerus.aoc2021.puzzle.DayThreePuzzle;
 import dev.cerus.aoc2021.puzzle.DayTwoPuzzle;
 import dev.cerus.aoc2021.puzzle.Puzzle;
 import java.io.IOException;
@@ -12,7 +13,8 @@ public class Launcher {
 
     private static final Puzzle[] PUZZLES = new Puzzle[] {
             new DayOnePuzzle(),
-            new DayTwoPuzzle()
+            new DayTwoPuzzle(),
+            new DayThreePuzzle()
     };
 
     public static void main(final String[] args) {
@@ -26,9 +28,11 @@ public class Launcher {
             // Run all solved days
             for (int i = 1; i <= 24; i++) {
                 if (PUZZLES.length >= i) {
+                    System.out.println();
                     solve(PUZZLES[i - 1], i);
                 }
             }
+            System.out.println();
         }
     }
 
@@ -36,6 +40,7 @@ public class Launcher {
         puzzle.setup(getInput(d));
         System.out.println("[Day " + d + "] [Part 1] " + puzzle.solvePartOne());
         System.out.println("[Day " + d + "] [Part 2] " + puzzle.solvePartTwo());
+        puzzle.cleanup();
     }
 
     private static Map<String, String> parseOptions(final String[] args) {
