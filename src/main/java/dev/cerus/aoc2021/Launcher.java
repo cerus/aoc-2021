@@ -3,6 +3,7 @@ package dev.cerus.aoc2021;
 import dev.cerus.aoc2021.puzzle.DayFivePuzzle;
 import dev.cerus.aoc2021.puzzle.DayFourPuzzle;
 import dev.cerus.aoc2021.puzzle.DayOnePuzzle;
+import dev.cerus.aoc2021.puzzle.DaySevenPuzzle;
 import dev.cerus.aoc2021.puzzle.DaySixPuzzle;
 import dev.cerus.aoc2021.puzzle.DayThreePuzzle;
 import dev.cerus.aoc2021.puzzle.DayTwoPuzzle;
@@ -20,7 +21,8 @@ public class Launcher {
             new DayThreePuzzle(),
             new DayFourPuzzle(),
             new DayFivePuzzle(),
-            new DaySixPuzzle()
+            new DaySixPuzzle(),
+            new DaySevenPuzzle()
     };
 
     public static void main(final String[] args) {
